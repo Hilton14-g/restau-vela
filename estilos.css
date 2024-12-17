@@ -1,0 +1,204 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4b4f53;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #ff6347;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;              /* Ocupa todo el ancho disponible */
+    height: 280px;            /* Ajusto la altura de las imágenes */
+    object-fit: cover;        /* Mantiene la proporción sin distorsionar */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+#menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#menu .col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+#menu .card {
+    width: 18rem;
+    margin: 10px;
+    height: 100%;
+}
+
+#menu .card-body {
+    padding: 15px;
+    background-color: #fff;
+}
+
+#menu .card-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #343a40;
+}
+
+#menu .card-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+#menu h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about {
+    background-color: #ffffff;
+    padding-top: 50px;
+}
+
+#about h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #343a40;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.about-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.about-img-container img {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-img-container img:hover {
+    transform: scale(1.1);
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #495057;
+    text-align: justify;
+}
+
+#contacto h2 {
+    color: #fff8f8;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#contacto .form-label,
+#contacto .form-control {
+    color: rgb(255, 255, 255);
+}
+
+#contacto input,
+#contacto textarea {
+    color: rgb(0, 0, 0);
+    background-color: #5a5858;
+    border: 1px solid #222324;
+}
+
+/* Ajustes solo en la versión móvil */
+@media (max-width: 768px) {
+    #menu .col-md-4 {
+        width: 100%; /* Los cards ocuparán todo el ancho disponible en pantallas móviles */
+        margin-bottom: 20px; /* Separación entre los cards */
+    }
+
+    #menu .card {
+        width: 100%; /* Los cards ocuparán el 100% del ancho de su contenedor */
+        margin: 10px 0; /* Márgenes superior e inferior para separar los cards */
+    }
+}
+
+@media (max-width: 576px) {
+    #menu .card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
